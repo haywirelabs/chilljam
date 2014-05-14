@@ -17,7 +17,7 @@ $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), 
 var_dump($lastObject);
 
 foreach($objects as $name => $object){
-  if(strpos($name, "swf")){
+  if(strpos($name, "swf") || strpos($name, "php")){
     $lastChar = substr($name, -1);
     if($lastChar != "."){
       $filePath = explode("/", $name);
