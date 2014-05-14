@@ -14,8 +14,6 @@ $path = realpath('/home/hedgehog001/chilltheuniverse.com/wp-content/uploads');
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 
-var_dump($lastObject);
-
 foreach($objects as $name => $object){
   if(!strpos($name, "swf") || !strpos($name, "php")){
     $lastChar = substr($name, -1);
