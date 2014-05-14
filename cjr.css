@@ -3,11 +3,11 @@ body {
   background-color: #EFEFEF;
 }
 p {
-  padding: 10px;
+  padding: 0 100px;
 }
 a {
   color: #e28e27;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 a:visited {
   color: #273A4D;
@@ -16,7 +16,7 @@ a:hover {
   color: #F39F38;
 }
 h1 {
-  padding: 10px;
+  padding: 0 100px;
 }
 .byline{
   font-size: .7em;
