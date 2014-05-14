@@ -6,7 +6,7 @@ p {
   padding: 0 100px;
 }
 a {
-  padding-right: 3px;
+  padding-right: 4px;
   color: #e28e27;
   font-size: 1.4em;
 }
@@ -23,4 +23,5 @@ h1 {
 .byline{
   color: #5F4822;
   font-size: .7em;
+  letter-spacing: 5px;
 }
