@@ -6,6 +6,7 @@ p {
   padding: 0 100px;
 }
 a {
+  padding-right: 3px;
   color: #e28e27;
   font-size: 1.4em;
 }
