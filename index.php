@@ -33,10 +33,10 @@ foreach($objects as $name => $object){
       echo '<span class="byline">';
       if (is_numeric($publishMonth)) {
         $publishMonthName = date("F", mktime(0,0,0, $publishMonth, 10));
-        echo ' | Published on <strong>' . $publishMonthName . ' of ' . $publishYear . '</strong></br>';
+        echo ' | Published in <strong>' . $publishMonthName . ' of ' . $publishYear . '</strong></br>';
       }
       else{
-        echo ' | Published on <strong>' . $publishMonth . ' of ' . $publishYear . '</strong></br>';
+        echo ' | Published on <strong>' . $publishMonth . ' from ' . $publishYear . '</strong></br>';
       }
       echo '</span>';
       echo '</p>';
