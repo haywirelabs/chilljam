@@ -29,8 +29,8 @@ foreach($objects as $name => $object){
       $urlPath = 'http://chilljam.com/' . implode('/', $filePath);
       $urlName = end($filePath);
       echo "<p>";
-      echo "Published: <strong>" . $publishMonth . "/" . $publishYear . "</strong></br>";
       echo '<a href="' . $urlPath . '">' . $urlName . '</a></br>';
+      echo "Published: <strong>" . $publishMonth . "/" . $publishYear . "</strong></br>";
       echo "</p>";
     }
   }
