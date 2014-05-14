@@ -32,7 +32,7 @@ foreach($objects as $name => $object){
       echo '<p>';
       echo '<a href="' . $urlPath . '" target="blank">' . $urlName . '</a>';
       echo '<span class="byline">';
-      echo ' | Published: <strong>' . $publishMonthName . '/' . $publishYear . '</strong></br>';
+      echo ' | Published: <strong>' . $publishMonthName . ' of ' . $publishYear . '</strong></br>';
       echo '</span>';
       echo '</p>';
     }
