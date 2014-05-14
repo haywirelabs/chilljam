@@ -5,6 +5,15 @@ body {
 p {
   padding: 10px;
 }
+a {
+  color: #F39F38;
+}
+a:visited {
+  color: #273A4D;
+}
+a:hover {
+  color: #273A4D;
+}
 h1 {
   padding: 10px;
 }
