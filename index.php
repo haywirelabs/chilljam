@@ -25,7 +25,6 @@ foreach($objects as $name => $object){
       unset($filePath[3]);
       $publish = end($filePath);
       $publishMonth = prev($filePath);
-      $publishMonthName = date("F", mktime(0,0,0, $publishMonth, 10));
       $publishYear = prev($filePath);
       $urlPath = 'http://chilljam.com/' . implode('/', $filePath);
       $urlName = end($filePath);
@@ -33,6 +32,7 @@ foreach($objects as $name => $object){
       echo '<a href="' . $urlPath . '" target="blank">' . $urlName . '</a>';
       echo '<span class="byline">';
       if (is_numeric($publishMonth)) {
+        $publishMonthName = date("F", mktime(0,0,0, $publishMonth, 10));
         echo ' | Published on <strong>' . $publishMonthName . ' of ' . $publishYear . '</strong></br>';
       }
       else{
