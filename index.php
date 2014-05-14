@@ -14,7 +14,7 @@ $path = realpath('/home/hedgehog001/chilltheuniverse.com/wp-content/uploads');
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 
-$lastObject = end($objects);
+$lastObject = unset(end($objects));
 
 var_dump($lastObject);
 
