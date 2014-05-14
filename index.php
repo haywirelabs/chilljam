@@ -13,7 +13,11 @@
 $path = realpath('/home/hedgehog001/chilltheuniverse.com/wp-content/uploads');
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
-unset(end($objects));
+
+$lastObject = end($objects);
+
+var_dump($lastObject);
+
 foreach($objects as $name => $object){
   $lastChar = substr($name, -1);
   if($lastChar != "."){
