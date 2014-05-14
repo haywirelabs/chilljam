@@ -25,13 +25,14 @@ foreach($objects as $name => $object){
       unset($filePath[3]);
       $publish = end($filePath);
       $publishMonth = prev($filePath);
+      $publishMonthName = date("F", mktime(0,0,0, $publishMonth, 10));
       $publishYear = prev($filePath);
       $urlPath = 'http://chilljam.com/' . implode('/', $filePath);
       $urlName = end($filePath);
       echo '<p>';
       echo '<a href="' . $urlPath . '" target="blank">' . $urlName . '</a>';
       echo '<span class="byline">';
-      echo ' | Published: <strong>' . $publishMonth . '/' . $publishYear . '</strong></br>';
+      echo ' | Published: <strong>' . $publishMonthName . '/' . $publishYear . '</strong></br>';
       echo '</span>';
       echo '</p>';
     }
