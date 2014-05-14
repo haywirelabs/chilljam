@@ -7,7 +7,7 @@ p {
 }
 a {
   color: #e28e27;
-  font-size: 3em;
+  font-size: 2em;
 }
 a:visited {
   color: #273A4D;
@@ -17,4 +17,7 @@ a:hover {
 }
 h1 {
   padding: 10px;
+}
+.byline{
+  font-size: .5em;
 }

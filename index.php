@@ -28,10 +28,12 @@ foreach($objects as $name => $object){
       $publishYear = prev($filePath);
       $urlPath = 'http://chilljam.com/' . implode('/', $filePath);
       $urlName = end($filePath);
-      echo "<p>";
+      echo '<p>';
       echo '<a href="' . $urlPath . '">' . $urlName . '</a></br>';
-      echo "Published: <strong>" . $publishMonth . "/" . $publishYear . "</strong></br>";
-      echo "</p>";
+      echo '<span class="byline">';
+      echo 'Published: <strong>' . $publishMonth . '/' . $publishYear . '</strong></br>';
+      echo '</span>';
+      echo '</p>';
     }
   }
 }
