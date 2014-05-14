@@ -9,7 +9,7 @@
 
 <?php
 
-$path = realpath('content');
+$path = realpath('/home/hedgehog001/chilltheuniverse.com/wp-content/uploads');
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 foreach($objects as $name => $object){
@@ -21,10 +21,11 @@ foreach($objects as $name => $object){
       unset($filePath[0]);
       unset($filePath[1]);
       unset($filePath[2]);
+      unset($filePath[3]);
       $publish = end($filePath);
       $publishMonth = prev($filePath);
       $publishYear = prev($filePath);
-      $urlPath = 'http://localhost:8059/chilljam/' . implode('/', $filePath);
+      $urlPath = 'http://chilljam.com/' . implode('/', $filePath);
       $urlName = end($filePath);
       echo "<p>";
       echo "Published: <strong>" . $publishMonth . "/" . $publishYear . "</strong></br>";
