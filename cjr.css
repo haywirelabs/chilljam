@@ -6,13 +6,13 @@ p {
   padding: 10px;
 }
 a {
-  color: #F39F38;
+  color: #e28e27;
 }
 a:visited {
   color: #273A4D;
 }
 a:hover {
-  color: #273A4D;
+  color: #F39F38;
 }
 h1 {
   padding: 10px;
