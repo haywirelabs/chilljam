@@ -9,6 +9,7 @@ a {
   padding-right: 4px;
   color: #e28e27;
   font-size: 1.4em;
+  letter-spacing: 2px;
 }
 a:visited {
   color: #273A4D;
@@ -23,5 +24,5 @@ h1 {
 .byline{
   color: #5F4822;
   font-size: .7em;
-  letter-spacing: 5px;
+  letter-spacing: 2.5px;
 }
